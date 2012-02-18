@@ -1,0 +1,55 @@
+<div class="login-box signup">
+    <%=form_for("user", :url => "/users") do |f| %>
+        <label class="signup-n-invaite">Why inviteez?</label>
+        <ul class="error-box">
+            <%if flash[:notice]%>
+                <%flash[:notice].each do |field,msg|%>
+                    <li><%=field.capitalize%> <%=msg%></li>
+                <%end%>
+            <%end%>
+        </ul>
+        <dl>
+            <dt>
+                <%=f.label :first_name %>
+                <%=f.text_field :first_name %>
+            </dt>
+            <dt>
+                <%=f.label :last_name %>
+                <%=f.text_field :last_name %>
+            </dt>
+            <dt>
+                <%=f.label :email %>
+                <%=f.email_field :email%>
+            </dt>
+            <dt>
+                <%=f.label "I am a" %>
+                <%=f.select :sex, [["Male",1],["Female",2]] %>
+            </dt>
+            <dt>
+                <%=f.label :password %>
+                <%=f.password_field :password %>
+            </dt>
+            <dt>
+                <%=f.label :confirm %>
+                <%=f.password_field :password_confirmation %>
+            </dt>
+            <dt>
+                <%= f.submit "Sign up", :class => "sign-up" %>
+            </dt>
+        </dl>
+        
+<% end %>
+</div>
+<script type="text/javascript">
+    <%unless flash[:notice].nil?%>
+        $("#why-invitees").hide();
+        $("#sign-up").show();
+        <%flash[:error].each do |field,msg|%>
+            <%if msg.include?("<#>")%> //include ERROR symbol
+                <%msg = msg.gsub("<#>","")%>
+                $("#user_<%=field%>").addClass("error");
+            <%end%>
+            $("#user_<%=field%>").val("<%=msg%>");
+        <%end%>        
+    <%end%>    
+</script>

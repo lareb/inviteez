@@ -1,0 +1,344 @@
+/* 
+    Document   : design_main
+    Created on : Nov 28, 2011, 11:55:23 PM
+    Author     : lareb
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-image: url(/assets/web/green-bg.png);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+a{
+    text-decoration:none;
+}
+
+.clear-right{
+    clear:right;
+}
+
+.clear-left{
+    clear:left;
+}
+
+.clear{
+    clear:both;
+}
+
+#wrapper{    
+    width: 80%;
+    margin: 0 10%;
+}
+
+#wrapper .header{
+    height: 140px;
+    width: auto;
+}
+
+#logo{
+    background-image: url(/assets/web/inviteez-logo.png);
+    height: 97px;
+    width: 276px;
+    margin-top: 35px;
+    cursor: pointer;
+    float: left;
+}
+
+#wrapper hr{
+    color: white;
+}
+
+.login-box{
+    float: right;
+    height: 100px;
+    margin-top: 40px;
+    width: 352px;
+}
+.logged-in-user{
+    float: right;
+}
+.login-box dl{
+    margin-top: 5px;
+}
+
+.login-box dl dt{
+    color: black;
+    font-family: Arial;
+    margin-bottom: 5px;
+    width: 372px;
+}
+
+.signup dl dt{
+    border: 0px solid red;
+    float: right;
+    width: 305px;
+}
+
+.login-box dl dt select{
+    background-color: #789E42;
+    border: 0 solid red;
+    padding: 4px;
+    width: 216px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.login-box dl dt label{
+    float: left;
+    font-size: 17px;
+    width: 84px;
+}
+
+.login-box dl dt input{
+    background-color: #789E42;
+    border: 0 none;
+    height: 22px;
+    margin-bottom: 5px;
+    margin-right: 4px;
+    width: 216px;
+    font-size: 13px;
+}
+
+.login-box dl dt a{
+    color: black;
+    float: none;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+.login-box dl dt.login_links{
+    color: black;
+    width: 100%;
+}
+
+.signup dl dt input.sign-up {
+    background: url("/assets/web/sign-up.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 27px;
+    text-indent: -99999px;
+    width: 85px;
+}
+
+.login-box dl dt input.login_button{
+    background: url("/assets/web/sign-in.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 27px;
+    text-indent: -99999px;
+    width: 97px;
+}
+
+.container{
+    height: 350px;
+    width: 100%;
+}
+
+.container .invitation-slider{
+    border: 1px red solid;
+    height: 350px;
+    width: 64%;
+    float: left;
+}
+
+.container .why-inviteez{
+    float: left;
+    height: 350px;
+    margin-left: 16px;
+    width: 34%;
+}
+
+.container .why-inviteez label.why-inviteez-header{
+    background-image: url("/assets/web/why-inviteez.png");
+    background-repeat: no-repeat;
+    float: right;
+    height: 45px;
+    margin-top: 10px;
+    text-indent: -999999px;
+    width: 260px;    
+}
+
+.signup-n-invaite{
+    background-image: url("/assets/web/signup-n-invite.png");
+    background-repeat: no-repeat;
+    float: right;
+    height: 38px;
+    margin: 10px 0 0 0;
+    text-indent: -999999px;
+    width: 100%;
+}
+
+ul.error-box{
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 12px;
+    height: 105px;
+    list-style: none outside none;
+    margin-left: 132px;
+    width: 210px;
+}
+
+.error{
+    border-right: 1px red solid !important;
+}
+
+.container .why-inviteez .reasons-box{
+    float: left;
+    width: 100%;
+}
+
+.container .why-inviteez .reasons-box ul{
+    list-style: none;
+}
+
+.container .why-inviteez .reasons-box ul li{
+    float: left;
+    height: 80px;
+    margin: 0 0 20px 25px;
+    width: 87px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.signup{
+    margin-top: 0px;
+    height: 350px;
+}
+
+.container .why-inviteez .reasons-box ul li.plus-design{
+    background-image: url(/assets/web/200_plus_design.png);
+}
+.container .why-inviteez .reasons-box ul li.fancy-email{
+    background-image: url(/assets/web/fancy-email.png);
+}
+.container .why-inviteez .reasons-box ul li.slide-show{
+    background-image: url(/assets/web/slide-show.png);
+}
+.container .why-inviteez .reasons-box ul li.add-videos{
+    background-image: url(/assets/web/add-videos.png);
+}
+.container .why-inviteez .reasons-box ul li.easy-control-panel{
+    background-image: url(/assets/web/easy-control-panel.png);
+}
+.container .why-inviteez .reasons-box ul li.event-update{
+    background-image: url(/assets/web/event-update.png);
+}
+.container .why-inviteez .reasons-box ul li.wish-list{
+    background-image: url(/assets/web/wish-list.png);
+}
+.container .why-inviteez .reasons-box ul li.security{
+    background-image: url(/assets/web/security.png);
+}
+.container .why-inviteez .reasons-box ul li.more{
+    background-image: url(/assets/web/more.png);
+}
+.container .sign-up{
+
+}
+
+.footer{
+    height: 160px;
+    width: 100%;
+}
+
+.footer .help-links{
+    float: left;
+    height: 100%;
+    width: 67%;
+}
+
+.footer .help-links ul{    
+    float: left;
+    height: 100%;
+    list-style: none outside none;
+    width: 33%;
+}
+
+.footer .help-links ul li a{
+    color: black !important;
+    font-family: Arial;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.footer .help-links ul li.heading{
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+    margin: 5px 0 10px;
+
+}
+
+.footer .follow-us-on{
+    float: left;
+    width: 32%;
+    height: 100%;    
+}
+
+.footer .follow-us-on .saparator{
+    border-left: 2px solid white;
+    float: left;
+    height: 75%;
+    margin-top: 16px;
+}
+
+.footer .follow-us-on .follow-us{
+    float: left;
+    font-family: Arial;
+    font-size: 24px;
+    margin: 10px 3px 0 8px;
+}
+
+.footer .follow-us-on .follow-on{    
+    background-repeat: no-repeat;
+    float: left;
+    height: 100px;
+    margin-left: 5px;
+    text-indent: -99999px;
+    width: 95px;
+}
+
+.footer .follow-us-on .follow-on.yt{
+    background-image: url("/assets/web/follow-us-on-fb-yt.png");
+}
+.footer .follow-us-on .follow-on.fb{
+    background-image: url("/assets/web/follow-us-on-fb-yt.png");
+    background-position: -97px 0;
+}

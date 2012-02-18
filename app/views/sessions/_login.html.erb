@@ -1,0 +1,20 @@
+<dl>
+    <%= form_for("user", :url => user_session_path, :html => {:id => "sign_in"}) do |f| %>        
+            <dt>
+                <label>email</label>
+                <%= f.email_field :email, :id => "login-email",:size => 25 %>
+            </dt>
+            <dt>
+                <label>password</label>
+                <%= f.password_field :password, :id => "login-password",:size => 25 %>
+                <%= f.submit 'Log In', :class=>"login_button"%>
+            </dt>
+    <%end%>
+    <dt class="login_links">
+        <div style="float: right;">
+            <%= link_to "Don't remember password?", new_password_path('user') %>            
+            &nbsp;|&nbsp;
+            <a href="#" title="Cancel" onclick="return toggleSignup();">Sign up with us</a>
+        </div>
+    </dt>
+</dl>

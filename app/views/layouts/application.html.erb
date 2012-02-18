@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>INVITEEZ@home</title>
+    <%= stylesheet_link_tag :design_main %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+
+<div id="wrapper">
+  <div class="header">
+      <div id="logo"></div>
+      <div class="login-box">
+            <%= render :partial => "/sessions/manager" %>
+      </div>
+  </div>
+  <hr/>
+
+  <%= yield %>
+
+  <hr/>
+  <div class="footer">
+        <%=render :partial => "/layouts/footer"%>
+  </div>
+</div>
+
+  </body>
+</html>
