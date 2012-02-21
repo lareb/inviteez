@@ -92,7 +92,7 @@ a{
     float: right;
     height: 100px;
     margin-top: 40px;
-    width: 352px;
+    width: 385px;
 }
 .logged-in-user{
     float: right;
@@ -105,7 +105,7 @@ a{
     color: black;
     font-family: Arial;
     margin-bottom: 5px;
-    width: 372px;
+    width: 385px;
 }
 
 .signup dl dt{
@@ -132,11 +132,11 @@ a{
 .login-box dl dt input{
     background-color: #789E42;
     border: 0 none;
+    font-size: 13px;
     height: 22px;
     margin-bottom: 5px;
     margin-right: 4px;
     width: 216px;
-    font-size: 13px;
 }
 
 .login-box dl dt a{
@@ -164,7 +164,7 @@ a{
     float: right;
     height: 27px;
     text-indent: -99999px;
-    width: 97px;
+    width: 77px;
 }
 
 .container{
@@ -201,9 +201,9 @@ a{
     background-repeat: no-repeat;
     float: right;
     height: 38px;
-    margin: 10px 0 0 0;
+    margin: 10px 0 0;
     text-indent: -999999px;
-    width: 100%;
+    width: 312px;
 }
 
 ul.error-box{
@@ -240,6 +240,7 @@ ul.error-box{
 .signup{
     margin-top: 0px;
     height: 350px;
+    width: 360px;
 }
 
 .container .why-inviteez .reasons-box ul li.plus-design{
@@ -272,6 +273,38 @@ ul.error-box{
 .container .sign-up{
 
 }
+
+/*---------portfolio --------------*/
+.invitation-types{
+    border: 1px solid black;
+    height: 100%;
+    width: 70%;
+}
+
+.invitation-types ul.display-tiles{
+    list-style: none;
+}
+
+.invitation-types ul.display-tiles li{
+    border: 1px solid red;
+    height: 120px;
+    width: 130px;
+    float: left;
+    margin-right: 8px;
+    margin-top: 18px;
+    background-color: #fff;
+    cursor: pointer;
+    color: black;
+}
+
+.invitation-types ul.display-tiles li:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+/*---------portfolio --------------*/
 
 .footer{
     height: 160px;

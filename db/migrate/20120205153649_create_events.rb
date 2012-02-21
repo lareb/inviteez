@@ -3,7 +3,11 @@ class CreateEvents < ActiveRecord::Migration
     create_table :events do |t|
       t.string :title
       t.string :subtitle, :limit => 512
+      t.text :description
       t.text :venue
+      t.string :bride_info
+      t.string :groom_info
+      t.integer :venue_zip
       t.datetime :start_date
       t.datetime :end_date
       t.integer :sub_event_id

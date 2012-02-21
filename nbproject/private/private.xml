@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/assets/stylesheets/design_main.css</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/portfolio/index.html.erb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/home/index.html.erb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/controllers/portfolio_controller.rb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/portfolio/new.html.erb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/sessions/_sign_up.html.erb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/controllers/registrations_controller.rb</file>
+    </open-files>
 </project-private>

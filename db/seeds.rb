@@ -5,7 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-type = ["Wedding", "Engagement", "Birthday", "Anniversary", "Inauguration"]
-type.each do |t|
-    Invitation.create(:invitation_type => "#{t}", :is_active => 1)
+
+#Flush all the record
+ActiveRecord::Base.connection.execute("TRUNCATE TABLE invitations")
+type = ["Birthday", "Wedding","Anniversary" ,"Engagement", "Get to Gather", "Festival", "Farewell", "Welcome","Inauguration", "Corporate"]
+type.each_with_index do |t, index|
+    Invitation.create(:invitation_type => "#{t}", :is_active => 1, :display_order => index + 1)
 end

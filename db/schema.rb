@@ -16,7 +16,11 @@ ActiveRecord::Schema.define(:version => 20120206172729) do
   create_table "events", :force => true do |t|
     t.string   "title"
     t.string   "subtitle",     :limit => 512
+    t.text     "description"
     t.text     "venue"
+    t.string   "bride_info"
+    t.string   "groom_info"
+    t.integer  "venue_zip"
     t.datetime "start_date"
     t.datetime "end_date"
     t.integer  "sub_event_id"
@@ -28,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20120206172729) do
   create_table "invitations", :force => true do |t|
     t.string   "invitation_type"
     t.boolean  "is_active",       :default => true
+    t.integer  "display_order"
     t.datetime "created_at",                        :null => false
     t.datetime "updated_at",                        :null => false
   end
