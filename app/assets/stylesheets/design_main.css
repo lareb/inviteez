@@ -42,7 +42,7 @@ time, mark, audio, video {
 body{
     margin: 0px;
     padding: 0px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Gudea", "Arial", "Times New Roman", Times, serif;
     background-image: url(/assets/web/green-bg.png);
     height: 100%;
     width: 100%;
@@ -84,8 +84,41 @@ a{
     float: left;
 }
 
+.text-header{
+    color: white;
+    font-family: gudea, Atial;
+    font-size: 34px;
+}
+
+.label{
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    background: -moz-linear-gradient(center top , #B3B3B3, #FFFFFF) repeat scroll 0 0 transparent;
+    border-color: #FFFFFF;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+    color: #6A6A6A;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Gudea", "Arial";
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 55px 15px;
+    text-decoration: none;
+    text-shadow: 0 0 2px #6A6A6A
+    text-transform: uppercase;
+}
+
 #wrapper hr{
     color: white;
+    clear: left;
 }
 
 .login-box{
@@ -95,15 +128,26 @@ a{
     width: 385px;
 }
 .logged-in-user{
+    color: #B3B3B3;
     float: right;
+    font-family: gudea, "arial";
+    font-size: 20px;
+
 }
+
+.logged-in-user a{
+    
+}
+
 .login-box dl{
-    margin-top: 5px;
+    color: #B3B3B3;
+    float: right;
+    font-family: gudea, Arial;
 }
 
 .login-box dl dt{
     color: black;
-    font-family: Arial;
+    font-family: Gudea, Arial;
     margin-bottom: 5px;
     width: 385px;
 }
@@ -142,7 +186,7 @@ a{
 .login-box dl dt a{
     color: black;
     float: none;
-    font-family: Arial;
+    font-family: Gudea, Arial;
     font-size: 13px;
 }
 
@@ -168,7 +212,7 @@ a{
 }
 
 .container{
-    height: 350px;
+    height: auto;
     width: 100%;
 }
 
@@ -208,7 +252,7 @@ a{
 
 ul.error-box{
     color: #FFFFFF;
-    font-family: Arial;
+    font-family: Gudea, Arial;
     font-size: 12px;
     height: 105px;
     list-style: none outside none;
@@ -276,7 +320,6 @@ ul.error-box{
 
 /*---------portfolio --------------*/
 .invitation-types{
-    border: 1px solid black;
     height: 100%;
     width: 70%;
 }
@@ -286,7 +329,10 @@ ul.error-box{
 }
 
 .invitation-types ul.display-tiles li{
-    border: 1px solid red;
+    margin: 5px;
+    text-align: center;
+    width: 130px;
+/*    border: 1px solid red;
     height: 120px;
     width: 130px;
     float: left;
@@ -294,14 +340,27 @@ ul.error-box{
     margin-top: 18px;
     background-color: #fff;
     cursor: pointer;
-    color: black;
+    color: black;*/
 }
 
 .invitation-types ul.display-tiles li:hover{
-    background-color: black;
-    color: white;
+    /*background-color: black;
+    color: white;*/
 }
 
+
+/*--------Add new Event -----*/
+.new-event{
+    border: 1px solid white;
+    height: 100%;
+    width: 60%;
+}
+
+.new-event dl dt label{
+    float: left;
+    height: 20px;
+    width: 130px;
+}
 
 
 /*---------portfolio --------------*/
@@ -326,14 +385,14 @@ ul.error-box{
 
 .footer .help-links ul li a{
     color: black !important;
-    font-family: Arial;
+    font-family: Gudea, Arial;
     font-size: 17px;
     line-height: 27px;
 }
 
 .footer .help-links ul li.heading{
     color: white;
-    font-family: Arial;
+    font-family: Gudea, Arial;
     font-size: 20px;
     margin: 5px 0 10px;
 
@@ -354,7 +413,7 @@ ul.error-box{
 
 .footer .follow-us-on .follow-us{
     float: left;
-    font-family: Arial;
+    font-family: Gudea, Arial;
     font-size: 24px;
     margin: 10px 3px 0 8px;
 }

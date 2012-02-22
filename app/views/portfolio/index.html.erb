@@ -2,10 +2,10 @@
 
     <div class="invitaion-desc"></div>
     <div class="invitation-types">
-          <label class="chose-your-event">Chose your Event</label>
+          <label class="text-header">Chose your Event</label>
           <ul class="display-tiles">
             <%@type.each do |type|%>
-                <li onclick="window.location.href = '/portfolio/new/<%=type.id%>'"><%= type.invitation_type%></li>
+                <li class="label" onclick="window.location.href = '/portfolio/new/<%=type.id%>'"><%= type.invitation_type%></li>
             <%end%>
           </ul>
     </div>

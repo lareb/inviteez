@@ -1,68 +1,66 @@
+<div class="event-box">
+  <div class="new-event">
+      <%=form_for("event", :url => "/portfolio/create") do |f| %>
+          <label class="signup-n-invaite">Lets create a new Event</label>
+          <ul class="error-box">
+              <%if flash[:notice]%>
+                  <%flash[:notice].each do |field,msg|%>
+                      <li><%=field.capitalize%> <%=msg%></li>
+                  <%end%>
+              <%end%>
+          </ul>
+          <dl>
+              <dt>
+                  <%=f.label :title %>
+                  <%=f.text_field :title %>
+                  <a href="#" title="Event Title" onmouseover=""> ? </a>
+              </dt>
+              <dt>
+                  <%=f.label :subtitle %>
+                  <%=f.text_field :subtitle %>
+                  <a href="#" title="Event Subtitle" onmouseover=""> ? </a>
+              </dt>
+              <dt>
+                  <%=f.label "Starts on" %>
+                  <%=f.text_field :start_date, :style => "width:164px;"%> Ends On
+                  <%=f.text_field :end_date, :style => "width:165px;"%>
+                  <a href="#" title="Event Shedule" onmouseover=""> ? </a>
+              </dt>
 
-<div class="new-event">
-    <%=form_for("event", :url => "/portfolio/create") do |f| %>
-        <label class="signup-n-invaite">Lets create a new Event</label>
-        <ul class="error-box">
-            <%if flash[:notice]%>
-                <%flash[:notice].each do |field,msg|%>
-                    <li><%=field.capitalize%> <%=msg%></li>
-                <%end%>
-            <%end%>
-        </ul>
-        <dl>
-            <dt>
-                <%=f.label :title %>
-                <%=f.text_field :title %>
-                <a href="#" title="Event Title" onmouseover=""> ? </a>
-            </dt>
-            <dt>
-                <%=f.label :subtitle %>
-                <%=f.text_field :subtitle %>
-                <a href="#" title="Event Subtitle" onmouseover=""> ? </a>
-            </dt>
-            <dt>
-                <%=f.label :start_date %>
-                <%=f.text_field :start_date%>
-                <a href="#" title="Event Start On" onmouseover=""> ? </a>
-            </dt>
-            <dt>
-                <%=f.label :end_date %>
-                <%=f.text_field :end_date%>
-                <a href="#" title="Event Ends  On" onmouseover=""> ? </a>
-            </dt>
+              <dt>
+                  <%=f.label :description %>
+                  <%=f.text_area :description, :size => "50x8"%>
+                  <a href="#" title="Event description" onmouseover=""> ? </a>
+              </dt>
 
-            <dt>
-                <%=f.label :description %>
-                <textarea title="Event Description"></textarea>
-                <a href="#" title="Event Ends  On" onmouseover=""> ? </a>
-            </dt>
+              <dt>
+                  <%=f.label :bride_info %>
+                  <%=f.text_field :bride_info%>
+                  <a href="#" title="Bride Name" onmouseover=""> ? </a>
+              </dt>
+              <dt>
+                  <%=f.label :groom_info %>
+                  <%=f.text_field :groom_info %>
+                  <a href="#" title="Groom Name" onmouseover=""> ? </a>
+              </dt>
+              <dt>
+                  <%=f.label :venue %>
+                  <%=f.text_area :venue,:size => "50x5" %>
+                  <a href="#" title="Event's venue" onmouseover=""> ? </a>
+              </dt>
+              <dt>
+                  <%=f.label :venue_zip %>
+                  <%=f.text_field :venue_zip %>
+                  <a href="#" title="Event's venue" onmouseover=""> ? </a>
+              </dt>
+              <dt>
+                  <%= f.submit "Sign up", :class => "sign-up" %>
+                  <a href="/portfolio" class="back">Back</a>
+              </dt>
+          </dl>
 
-            <dt>
-                <%=f.label :bride_info %>
-                <%=f.text_field :start_date%>
-                <a href="#" title="Event Ends  On" onmouseover=""> ? </a>
-            </dt>
-            <dt>
-                <%=f.label :groom_info %>
-                <%=f.text_field :groom_info %>
-            </dt>
-            <dt>
-                <%=f.label :venue %>
-                <%=f.text_field :groom_info %>
-            </dt>
-            <dt>
-                <%=f.label :venue_zip %>
-                <%=f.text_field :venue_zip %>
-            </dt>
+      <% end %>
+    </div>
 
-
-            
-            <dt>
-                <%= f.submit "Sign up", :class => "sign-up" %>
-            </dt>
-        </dl>
-
-<% end %>
-        </div>
-
-<a href="/portfolio" class="back">Back</a>
+  <div class="preview-box"></div>
+</div>
