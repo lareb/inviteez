@@ -4,10 +4,19 @@
     <title>INVITEEZ@home</title>
     <%= stylesheet_link_tag :design_main %>
     <%= javascript_include_tag "application" %>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gudea">
     <%= csrf_meta_tag %>
   </head>
   <body>
 
+
+<div class="notifications">
+  <a class="prev" href="#" title="Prev"><img style="float: left" src="/assets/web/left.png" />Prev</a>
+  <ul>
+    <li>New designs are just arrived, check them all.....</li>
+  </ul>
+  <a class="next" href="#" title="Next">Next<img style="float: right" src="/assets/web/right.png" /></a>
+</div>
 <div id="wrapper">
   <div class="header">
       <div id="logo"></div>

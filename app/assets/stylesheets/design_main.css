@@ -42,7 +42,7 @@ time, mark, audio, video {
 body{
     margin: 0px;
     padding: 0px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Gudea", "Arial", "Times New Roman", Times, serif;
     background-image: url(/assets/web/green-bg.png);
     height: 100%;
     width: 100%;
@@ -65,6 +65,44 @@ a{
     clear:both;
 }
 
+.notifications{
+    background: -moz-linear-gradient(center top , #2C2C2C, #4D4D4D 100%) repeat scroll 0 0 transparent;
+    background:#B3B3B3;
+    background:-moz-linear-gradient(center top , #2C2C2C, #4D4D4D) repeat scroll 0 0 transparent;
+    background:-moz-linear-gradient(top,#2C2C2C, #4D4D4D);
+    background:-webkit-linear-gradient(top,#2C2C2C, #4D4D4D);
+    background:-o-linear-gradient(top,#2C2C2C, #4D4D4D);
+    background:linear-gradient(top,#2C2C2C, #4D4D4D);
+    height: 25px;
+    width: 100%;
+}
+
+.notifications a{
+    background:#B3B3B3;
+    background:-moz-linear-gradient(center top , #B3B3B3, #FFFFFF) repeat scroll 0 0 transparent;
+    background:-moz-linear-gradient(top,#B3B3B3, #FFFFFF);
+    background:-webkit-linear-gradient(top,#B3B3B3, #FFFFFF);
+    background:-o-linear-gradient(top,#B3B3B3, #FFFFFF);
+    background:linear-gradient(top,#B3B3B3, #FFFFFF);
+    color: black;
+    height: 100%;
+    text-align: center;
+    width: 75px;
+}
+
+.notifications a.next{float: right}
+.notifications a.prev{float: left}
+
+.notifications ul{
+    color: white;
+    float: left;
+    font-size: 14px;
+    list-style: none outside none;
+    margin-top: 3px;
+    text-align: center;
+    width: 88%;
+}
+
 #wrapper{    
     width: 80%;
     margin: 0 10%;
@@ -79,31 +117,93 @@ a{
     background-image: url(/assets/web/inviteez-logo.png);
     height: 97px;
     width: 276px;
-    margin-top: 35px;
+    margin-top: 25px;
     cursor: pointer;
     float: left;
 }
 
+.text-header{
+    color: white;
+    font-family: gudea, Atial;
+    font-size: 34px;
+}
+
+.label{
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    background:#B3B3B3;
+    background:-moz-linear-gradient(center top , #B3B3B3, #FFFFFF) repeat scroll 0 0 transparent;
+    background:-moz-linear-gradient(top,#B3B3B3, #FFFFFF);
+    background:-webkit-linear-gradient(top,#B3B3B3, #FFFFFF);
+    background:-o-linear-gradient(top,#B3B3B3, #FFFFFF);
+    background:linear-gradient(top,#B3B3B3, #FFFFFF);
+    border-color: #FFFFFF;
+    border-bottom-width:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+
+    border-style: solid;
+    border-width: 1px 1px 3px;
+    -moz-box-shadow:
+    0 0 5px rgba(0,0,0,0.5),
+    0 1px 0 rgba(255,255,255,0.1) inset;
+    -webkit-box-shadow:
+    0 0 5px rgba(0,0,0,0.5),
+    0 1px 0 rgba(255,255,255,0.1) inset;
+    box-shadow:
+    0 0 5px rgba(0,0,0,0.5),
+    0 1px 0 rgba(255,255,255,0.1) inset;
+    color: #6A6A6A;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Gudea", "Arial";
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 55px 15px;
+    text-decoration: none;
+    text-shadow: 0 0 2px #6A6A6A;
+    text-transform: uppercase;
+}
+
 #wrapper hr{
     color: white;
+    clear: left;
 }
 
 .login-box{
     float: right;
     height: 100px;
-    margin-top: 40px;
+    margin-top: 25px;
     width: 385px;
 }
 .logged-in-user{
+    color: #B3B3B3;
+    float: right;
+    font-family: gudea, "arial";
+    font-size: 20px;
+
+}
+
+.logged-in-user a{
+    color: #B3B3B3;
     float: right;
 }
+
 .login-box dl{
-    margin-top: 5px;
+    color: #B3B3B3;
+    float: right;
+    font-family: gudea, Arial;
 }
 
 .login-box dl dt{
     color: black;
-    font-family: Arial;
+    font-family: Gudea, Arial;
     margin-bottom: 5px;
     width: 385px;
 }
@@ -142,7 +242,7 @@ a{
 .login-box dl dt a{
     color: black;
     float: none;
-    font-family: Arial;
+    font-family: Gudea, Arial;
     font-size: 13px;
 }
 
@@ -168,7 +268,7 @@ a{
 }
 
 .container{
-    height: 350px;
+    height: auto;
     width: 100%;
 }
 
@@ -208,7 +308,7 @@ a{
 
 ul.error-box{
     color: #FFFFFF;
-    font-family: Arial;
+    font-family: Gudea, Arial;
     font-size: 12px;
     height: 105px;
     list-style: none outside none;
@@ -275,10 +375,16 @@ ul.error-box{
 }
 
 /*---------portfolio --------------*/
+.invitaion-desc{
+    float: left;
+    height: 450px;
+    width: 30%;
+}
+
 .invitation-types{
-    border: 1px solid black;
     height: 100%;
     width: 70%;
+    float: left;
 }
 
 .invitation-types ul.display-tiles{
@@ -286,7 +392,10 @@ ul.error-box{
 }
 
 .invitation-types ul.display-tiles li{
-    border: 1px solid red;
+    margin: 5px;
+    text-align: center;
+    width: 130px;
+/*    border: 1px solid red;
     height: 120px;
     width: 130px;
     float: left;
@@ -294,15 +403,83 @@ ul.error-box{
     margin-top: 18px;
     background-color: #fff;
     cursor: pointer;
-    color: black;
+    color: black;*/
 }
 
 .invitation-types ul.display-tiles li:hover{
-    background-color: black;
-    color: white;
+    /*background-color: black;
+    color: white;*/
 }
 
 
+/*--------Add new Event -----*/
+.new-event{
+    height: 100%;
+    width: 60%;
+}
+
+.new-event dl dt textarea,
+.new-event dl dt input{
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    background:#B3B3B3;
+    background:-moz-linear-gradient(center top , #B3B3B3, #FFFFFF) repeat scroll 0 0 transparent;
+    background:-moz-linear-gradient(top,#B3B3B3, #FFFFFF);
+    background:-webkit-linear-gradient(top,#B3B3B3, #FFFFFF);
+    background:-o-linear-gradient(top,#B3B3B3, #FFFFFF);
+    background:linear-gradient(top,#B3B3B3, #FFFFFF);
+    border-color: #FFFFFF;
+    border-bottom-width:1px;
+    -moz-border-radius:1px;
+    -webkit-border-radius:1px;
+    border-radius:1px;
+    border-style: solid;
+    border-width: 1px 1px 3px;
+    -moz-box-shadow:
+    0 0 5px rgba(0,0,0,0.5),
+    0 1px 0 rgba(255,255,255,0.1) inset;
+    -webkit-box-shadow:
+    0 0 5px rgba(0,0,0,0.5),
+    0 1px 0 rgba(255,255,255,0.1) inset;
+    box-shadow:
+    0 0 5px rgba(0,0,0,0.5),
+    0 1px 0 rgba(255,255,255,0.1) inset;
+    font-family: "Gudea", "Arial";
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 5px;
+    text-decoration: none;
+    text-shadow: 0 0 2px #6A6A6A;
+    width: 400px;
+}
+
+.new-event dl dt{
+    margin: 10px 0;
+}
+
+.new-event dl dt label{
+    float: left;
+    height: 20px;
+    width: 130px;
+}
+
+.new-event dl dt input.create-event{
+    background: -moz-linear-gradient(center top , #1D83C6, #2093DB) repeat scroll 0 0 transparent;
+    border-color: #2093DB;
+    margin-left: 276px;
+    width: 100px;
+}
+
+.new-event dl dt a.form-link{
+    color: white;
+    float: left;
+    font-size: 18px;
+}
 
 /*---------portfolio --------------*/
 
@@ -326,14 +503,14 @@ ul.error-box{
 
 .footer .help-links ul li a{
     color: black !important;
-    font-family: Arial;
+    font-family: Gudea, Arial;
     font-size: 17px;
     line-height: 27px;
 }
 
 .footer .help-links ul li.heading{
     color: white;
-    font-family: Arial;
+    font-family: Gudea, Arial;
     font-size: 20px;
     margin: 5px 0 10px;
 
@@ -354,7 +531,7 @@ ul.error-box{
 
 .footer .follow-us-on .follow-us{
     float: left;
-    font-family: Arial;
+    font-family: Gudea, Arial;
     font-size: 24px;
     margin: 10px 3px 0 8px;
 }

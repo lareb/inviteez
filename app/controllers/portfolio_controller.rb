@@ -19,5 +19,9 @@ class PortfolioController < ApplicationController
       end
       return
   end
-  
+
+  def permission_setup
+      render :layout => false
+  end
+
 end
