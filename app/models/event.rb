@@ -1,5 +1,5 @@
 class Event < ActiveRecord::Base
-
-  belongs_to :user_invitations
-  has_many :user_invitations, :dependent =>:destroy
+    belongs_to :user
+    has_one :invitation
+    has_one :event_contact_info
 end

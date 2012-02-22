@@ -12,6 +12,9 @@ class CreateEvents < ActiveRecord::Migration
       t.datetime :end_date
       t.integer :sub_event_id
       t.text :host_names
+      t.integer :user_id
+      t.integer :invitation_id
+      t.integer :event_contact_info_id
       t.timestamps
     end
   end

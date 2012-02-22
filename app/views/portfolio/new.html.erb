@@ -11,6 +11,8 @@
           </ul>
           <dl>
               <dt>
+                  <%=f.hidden_field :user_id, :value => current_user.id%>
+                  <%=f.hidden_field :invitation_id, :value => params[:id]%>
                   <%=f.label :title %>
                   <%=f.text_field :title %>
                   <a href="#" title="Event Title" onmouseover=""> ? </a>

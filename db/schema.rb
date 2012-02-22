@@ -11,11 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120222183822) do
+ActiveRecord::Schema.define(:version => 20120222204240) do
+
+  create_table "event_contact_infos", :force => true do |t|
+    t.string   "contact_person_name"
+    t.string   "contact_person_number"
+    t.string   "contact_person_email"
+    t.text     "contact_person_address"
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
+  end
 
   create_table "events", :force => true do |t|
     t.string   "title"
-    t.string   "subtitle",     :limit => 512
+    t.string   "subtitle",              :limit => 512
     t.text     "description"
     t.text     "venue"
     t.string   "bride_info"
@@ -25,9 +34,12 @@ ActiveRecord::Schema.define(:version => 20120222183822) do
     t.datetime "end_date"
     t.integer  "sub_event_id"
     t.text     "host_names"
-    t.datetime "created_at",                                    :null => false
-    t.datetime "updated_at",                                    :null => false
-    t.boolean  "is_live",                     :default => true
+    t.integer  "user_id"
+    t.integer  "invitation_id"
+    t.integer  "event_contact_info_id"
+    t.datetime "created_at",                                             :null => false
+    t.datetime "updated_at",                                             :null => false
+    t.boolean  "is_live",                              :default => true
   end
 
   create_table "invitations", :force => true do |t|
@@ -36,16 +48,6 @@ ActiveRecord::Schema.define(:version => 20120222183822) do
     t.integer  "display_order"
     t.datetime "created_at",                        :null => false
     t.datetime "updated_at",                        :null => false
-  end
-
-  create_table "user_invitations", :force => true do |t|
-    t.integer "user_id"
-    t.integer "invitation_id"
-    t.integer "event_id"
-    t.string  "contact_person_name"
-    t.string  "contact_person_number"
-    t.string  "contact_person_email"
-    t.text    "contact_person_address"
   end
 
   create_table "users", :force => true do |t|
