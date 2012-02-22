@@ -1,8 +1,8 @@
 <div class="event-box">
   <div class="new-event">
       <%=form_for("event", :url => "/portfolio/create") do |f| %>
-          <label class="signup-n-invaite">Lets create a new Event</label>
-          <ul class="error-box">
+          <label class="text-header">Lets create a new Event</label>
+          <ul class="error-box" style="display: none;">
               <%if flash[:notice]%>
                   <%flash[:notice].each do |field,msg|%>
                       <li><%=field.capitalize%> <%=msg%></li>
@@ -22,8 +22,8 @@
               </dt>
               <dt>
                   <%=f.label "Starts on" %>
-                  <%=f.text_field :start_date, :style => "width:164px;"%> Ends On
-                  <%=f.text_field :end_date, :style => "width:165px;"%>
+                  <%=f.text_field :start_date, :style => "width:162px;"%> Ends On
+                  <%=f.text_field :end_date, :style => "width:162px;"%>
                   <a href="#" title="Event Shedule" onmouseover=""> ? </a>
               </dt>
 
@@ -54,8 +54,9 @@
                   <a href="#" title="Event's venue" onmouseover=""> ? </a>
               </dt>
               <dt>
-                  <%= f.submit "Sign up", :class => "sign-up" %>
-                  <a href="/portfolio" class="back">Back</a>
+                  <label>&nbsp;</label>
+                  <%= f.submit "Create Event", :class => "create-event" %>
+                  <a href="/portfolio" class="form-link">Back</a>
               </dt>
           </dl>
 
