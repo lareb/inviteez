@@ -50,6 +50,16 @@ ActiveRecord::Schema.define(:version => 20120222204240) do
     t.datetime "updated_at",                        :null => false
   end
 
+  create_table "user_invitations", :force => true do |t|
+    t.integer "user_id"
+    t.integer "invitation_id"
+    t.integer "event_id"
+    t.string  "contact_person_name"
+    t.string  "contact_person_number"
+    t.string  "contact_person_email"
+    t.text    "contact_person_address"
+  end
+
   create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "",   :null => false
     t.string   "encrypted_password",     :limit => 128, :default => "",   :null => false

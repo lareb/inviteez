@@ -189,6 +189,54 @@ a{
     font-size: 20px;
 
 }
+.live-event{
+    clear: right;
+    float: right;
+    margin-top: 11px;
+    padding: 10px;
+    width: 215px;
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    background:#B3B3B3;
+    background: -moz-linear-gradient(center top , #B3B3B3 12px, #B3B3B3 31px) repeat scroll 0 0 transparent;
+    background:-moz-linear-gradient(top,#B3B3B3 12px, #B3B3B3 31px);
+    background:-webkit-linear-gradient(top,#B3B3B3 12px, #B3B3B3 31px);
+    background:-o-linear-gradient(top,#B3B3B3 12px, #B3B3B3 31px);
+    background:linear-gradient(top,#B3B3B3 12px, #B3B3B3 31px);
+    border-color: #B3B3B3;
+    border-bottom-width:0px;
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    border-radius:0px;
+
+    border-style: solid;
+    border-width: 1px 1px 3px;
+    -moz-box-shadow:
+    0 0 10px #000000,
+    0 1px 0 rgba(255,255,255,0.1) inset;
+    -webkit-box-shadow:
+    0 0 10px #000000,
+    0 1px 0 rgba(255,255,255,0.1) inset;
+    box-shadow:
+    0 0 10px #000000, 
+    0 1px 0 rgba(255, 255, 255, 0.1) inset;
+
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Gudea", "Arial";
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-decoration: none;
+    text-shadow: 0 0 2px #fff;
+    text-align: center;
+}
+
 
 .logged-in-user a{
     color: #B3B3B3;
@@ -407,6 +455,8 @@ ul.error-box{
 }
 
 .invitation-types ul.display-tiles li:hover{
+    padding: 58px 18px;
+    margin: 2px;
     /*background-color: black;
     color: white;*/
 }
