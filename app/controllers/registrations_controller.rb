@@ -19,7 +19,7 @@ class RegistrationsController < Devise::RegistrationsController
       clean_up_passwords(resource)      
       flash[:notice] = resource.errors #flash[:notice].to_a.concat resource.errors.full_messages
       error = {}
-      x resource.inspect
+      
       form_fields = {:first_name => params[:user][:first_name], :last_name => params[:user][:last_name], :email => params[:user][:email]}
       resource.errors.each do |k, v|
         error[k.to_sym] = "<#>#{params[:user][k.to_sym]}"

@@ -165,7 +165,7 @@ a{
     font-size: 13px;
     letter-spacing: 1px;
     line-height: 1;
-    padding: 55px 15px;
+    padding: 48px 15px;
     text-decoration: none;
     text-shadow: 0 0 2px #6A6A6A;
     text-transform: uppercase;
@@ -364,6 +364,51 @@ ul.error-box{
     width: 210px;
 }
 
+.error-box-new{
+    clear: right;
+    padding: 10px;
+    width: 390px;
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    background:#B3B3B3;
+    background: -moz-linear-gradient(center top , #B3B3B3 12px, #B3B3B3 31px) repeat scroll 0 0 transparent;
+    background:-moz-linear-gradient(top,#B3B3B3 12px, #B3B3B3 31px);
+    background:-webkit-linear-gradient(top,#B3B3B3 12px, #B3B3B3 31px);
+    background:-o-linear-gradient(top,#B3B3B3 12px, #B3B3B3 31px);
+    background:linear-gradient(top,#B3B3B3 12px, #B3B3B3 31px);
+    border-color: #B3B3B3;
+    border-bottom-width:0px;
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    border-radius:0px;
+
+    border-style: solid;
+    border-width: 1px 1px 3px;
+    -moz-box-shadow:
+    0 0 10px red,
+    0 1px 0 rgba(255,255,255,0.1) inset;
+    -webkit-box-shadow:
+    0 0 10px red,
+    0 1px 0 rgba(255,255,255,0.1) inset;
+    box-shadow:
+    0 0 10px red,
+    0 1px 0 rgba(255, 255, 255, 0.1) inset;
+
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Gudea", "Arial";
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    text-decoration: none;
+    text-align: left;
+}
+
 .error{
     border-right: 1px red solid !important;
 }
@@ -483,6 +528,9 @@ ul.error-box{
 }
 
 .invitation-types ul.display-tiles li{
+    display: block;
+    float: left;
+    height: 25px;
     margin: 5px;
     text-align: center;
     width: 130px;
@@ -498,7 +546,7 @@ ul.error-box{
 }
 
 .invitation-types ul.display-tiles li:hover{
-    padding: 58px 18px;
+    padding: 51px 18px;
     margin: 2px;
     /*background-color: black;
     color: white;*/
@@ -645,3 +693,14 @@ ul.error-box{
     background-image: url("/assets/web/follow-us-on-fb-yt.png");
     background-position: -97px 0;
 }
+
+
+/*----------SLIDER CSS ----------------*/
+
+
+/* jCarousel Styles */
+/*if you're not using the carousel you can delete everything below this */
+.jcarousel-skin-pika .jcarousel-container-horizontal { padding: 15px 20px; overflow:hidden;}
+.jcarousel-skin-pika .jcarousel-clip-horizontal {height: 90px; width: 100%;}
+.jcarousel-skin-pika .jcarousel-item-horizontal { margin-right: 10px;}
+

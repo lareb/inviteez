@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120222204240) do
+ActiveRecord::Schema.define(:version => 20120226130826) do
 
   create_table "event_contact_infos", :force => true do |t|
     t.string   "contact_person_name"
@@ -42,12 +42,29 @@ ActiveRecord::Schema.define(:version => 20120222204240) do
     t.boolean  "is_live",                              :default => true
   end
 
+  create_table "invitation_designs", :force => true do |t|
+    t.string   "design_title"
+    t.integer  "invitation_id"
+    t.boolean  "is_available",  :default => true
+    t.string   "path"
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+  end
+
   create_table "invitations", :force => true do |t|
     t.string   "invitation_type"
     t.boolean  "is_active",       :default => true
     t.integer  "display_order"
     t.datetime "created_at",                        :null => false
     t.datetime "updated_at",                        :null => false
+  end
+
+  create_table "user_designs", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "invitation_designs_id"
+    t.integer  "event_id"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
   end
 
   create_table "user_invitations", :force => true do |t|

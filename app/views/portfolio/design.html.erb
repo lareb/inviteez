@@ -1,0 +1,20 @@
+<%= javascript_include_tag '/assets/jquery.pikachoose.js' %>
+
+<label class="text-header">Select your Design</label>
+<a href="/portfolio" title="Back to Chose your Event" style="float: right; margin-top: 20px;">Back</a>
+<div class="pikachoose">
+	<ul id="card-demo" class="jcarousel-skin-pika">
+		<li><a href="http://www.pikachoose.com"><img src="/assets/web/invitation_designs/wedding/1.png"/></a><span>This is an example of the basic theme.</span></li>
+		<li><a href="http://www.pikachoose.com"><img src="/assets/web/invitation_designs/wedding/2.png"/></a><span>jCarousel is supported and can be integrated with PikaChoose!</span></li>
+		<li><a href="http://www.pikachoose.com"><img src="/assets/web/invitation_designs/wedding/p1.jpg"/></a><span>Be sure to check out <a href="http://www.pikachoose.com">PikaChoose.com</a> for updates.</span></li>
+		<li><a href="http://www.pikachoose.com"><img src="/assets/web/invitation_designs/wedding/p2.jpg"/></a><span>You can use any type of html you want with PikaChoose</span></li>
+		<li><a href="http://www.pikachoose.com"><img src="/assets/web/invitation_designs/wedding/p3.png"/></a><span>PikaChoose survives on your donations! Keep the project alive with a donation.</span></li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(
+        function (){
+            $("#card-demo").PikaChoose({carousel:true,carouselOptions:{wrap:'circular'}});
+        });
+</script>
