@@ -3,8 +3,9 @@ class ApplicationController < ActionController::Base
   before_filter :get_live_events
 
   def get_live_events
+      #x signed_in
       if signed_in?
-          @total_live_events = Event.where("user_id = #{current_user.id} AND is_live = 1").count(:all)
+          @total_live_events = 1 #Event.where("user_id = #{current_user.id} AND is_live = 1").count(:all)
       end
   end
 

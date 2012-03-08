@@ -10,5 +10,5 @@
 ActiveRecord::Base.connection.execute("TRUNCATE TABLE invitations")
 type = ["Birthday", "Wedding","Marriage Anniversary" ,"Engagement", "Get to Gather", "Anniversary","Festival", "Farewell", "Welcome","Inauguration", "Corporate"]
 type.each_with_index do |t, index|
-    Invitation.create(:invitation_type => "#{t}", :is_active => 1, :display_order => index + 1)
+    Invitation.create(:name => "#{t}", :is_active => 1, :display_order => index + 1)
 end

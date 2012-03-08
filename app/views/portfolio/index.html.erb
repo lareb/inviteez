@@ -5,7 +5,7 @@
           <label class="text-header">Chose your Event</label>
           <ul class="display-tiles">
             <%@type.each do |type|%>
-                <li class="label" style="" onclick="window.location.href = '/portfolio/design?type=<%=type.id%>'"><%= type.invitation_type%></li>
+                <li class="label" style="" onclick="window.location.href = '/portfolio/design?type=<%=type.id%>'"><%= type.name%></li>
             <%end%>
           </ul>
     </div>

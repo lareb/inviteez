@@ -1,7 +1,7 @@
 class PortfolioController < ApplicationController
   before_filter :authenticate_user!
   def index
-    @type = Invitation.select("id, invitation_type").where("is_active = 1")
+    @type = Invitation.select("id, name").where("is_active = 1")
   end
 
   def new
@@ -36,6 +36,13 @@ class PortfolioController < ApplicationController
           redirect_to :controller => "portfolio", :action => "new", :id => params[:event]["invitation_id"]
       end
       return
+  end
+
+  def customize_your_invitation
+    @content = InvitationDesign.first()
+    x @content
+    render :layout => false
+    #render :template => "/design_templates/wedding/black_with_rose", :layout => false
   end
 
   def permission_setup

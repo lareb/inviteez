@@ -8,6 +8,10 @@ class HomeController < ApplicationController
     end
   end
 
+  def tmp_design
+    render :layout => false
+  end
+
   def edit_profile
     render :text => "yahoo "
   end
