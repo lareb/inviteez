@@ -13,6 +13,7 @@ class PortfolioController < ApplicationController
 
   def design
     @invitation = Invitation.find_by_id(params[:type]) #where("id = #{params[:id].to_i}")
+    @invitation_designs = InvitationDesign.all()
     if(@invitation.nil? || @invitation.is_active != true)
       redirect_to :action => :index
     end
@@ -39,10 +40,8 @@ class PortfolioController < ApplicationController
   end
 
   def customize_your_invitation
-    @content = InvitationDesign.first()
-    x @content
+    @content = InvitationDesign.find(params[:id])
     render :layout => false
-    #render :template => "/design_templates/wedding/black_with_rose", :layout => false
   end
 
   def permission_setup

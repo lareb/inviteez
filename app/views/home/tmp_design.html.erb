@@ -5,11 +5,25 @@
   </head>
   <body>
     <div id="wrapper">
-        <label class="title">Main Title</label>
-        <label class="title sub-title">Sub Title comes over here....</label>
-        
+        <div class="left-container">
+          <label class="title">Main Title</label>
+          <label class="title sub-title">Sub Title comes over here....</label>
+        </div>
+        <div class="right-container">
+          <div class="event-on">14 February 2012, 7.30 PM</div><br/>
+          <div style="text-align: center; font-size: 40px; color: white; margin-top: 20px;">At</div>
+          <div class="events-venue">
+              123, Address line one,<br/>
+              Address line 2,<br/>
+              City, State - 456789
+          </div>
+        </div>
+
         <div class="content">
                   &nbsp;&nbsp;Don't walk in front of me, I may not follow.
+        Don't walk behind me, I may not lead.
+        Just walk beside me and be my friend forever.
+        Wedding Invitation Quote by an Unknown author. Don't walk in front of me, I may not follow.
         Don't walk behind me, I may not lead.
         Just walk beside me and be my friend forever.
         Wedding Invitation Quote by an Unknown author
@@ -19,14 +33,6 @@
           <label class="partner-one">Partner One</label><br/>
           <label class="and">weds</label><br/>
           <label class="partner-two">Partner Two</label>
-        </div>
-        
-        <div class="event-on">14 February 2012, 7.30 PM</div><br/>
-        <div style="float: left; font-size: 32px; clear: both; margin-left: 411px; color: gray;">at</div>
-        <div class="events-venue">
-            123, Address line one,<br/>
-            Address line 2,<br/>
-            City, State - 456789
         </div>
 
         <div class="rsvp" style="color: white; float: right;">
@@ -52,81 +58,88 @@
         text-decoration: none;
       }
       #wrapper{
-          background-image: url("/assets/web/invitation_designs/wedding/black-with-red-heart.jpg");
+          background-image: url("/assets/web/invitation_designs/wedding/black-with-red-rose.jpg");
           background-repeat: no-repeat;
           border: 10px solid white;
           display: block;
-          height: 700px;
+          height: 637px;
           margin: 0 auto;
           width: 787px;
       }
 
       label.title{
-            color: white;
-            float: left;
-            font-size: 85px;
-            text-align: center;
-            width: 100%;
-            height: 75px;
+        color: white;
+        float: left;
+        font-size: 85px;
+        height: 75px;
+        text-align: left;
+        width: 500px;
        }
        label.sub-title{
-            font-size: 24px;
+        font-size: 24px;
+        margin-left: 50px;
+        width: 450px;
        }
        div.content{
-              color: white;
-              float: left;
-              font-size: 26px;
-              height: 280px;
-              margin-top: 15px;
-              width: 450px;
-              margin-left: 15px;
+        color: white;
+        float: left;
+        font-size: 26px;
+        height: 280px;
+        margin-left: 15px;
+        margin-top: -140px;
+        width: 500px;
        }
        .partners-name{
-            color: white;
-            float: left;
-            height: 200px;
-            margin-top: 70px;
-            width: 315px;
-            margin-left: -15px;
+          color: #FFFFFF;
+          float: left;
+          height: 170px;
+          width: 385px;
       }
       .partner-one{
-            float: left;
-            font-size: 40px;
-            margin-left: 25px;
-            margin-top: 40px;
+          float: left;
+          font-size: 40px;
+          padding-left: 20px;
+          width: 365px; 
       }
       .partner-two{
-            float: left;
-            font-size: 40px;
-            margin-left: -50px;
-            margin-top: 65px;
+          font-size: 40px;
+          margin-left: 20px;
+          width: 365px;
       }
       .and{
-            float: left;
-            font-size: 28px;
-            margin-left: -50px;
-            margin-top: 55px;
+          float: left;
+          font-size: 40px;
+          margin-left: 20px;
+          margin-top: -10px;
+          width: 365px;     
       }
       .events-venue{
-            color: white;
-            float: left;
-            font-size: 22px;
-            margin-left: 360px;
-            width: 415px;
+            color: black;
+            font-size: 32px;
+            margin-top: 25px;
+            text-align: right;
+            
       }
       .event-on{
-            clear: both;
-            color: white;
-            float: left;
-            font-size: 22px;
-            margin-left: 360px;
-            margin-top: -12px;
+          color: black;
+          font-size: 26px;
+          margin: 26px 0 0 40px;
       }
       .rsvp label{
         font-size: 20px;
       }
       .rsvp a{
         color: inherit;
+      }
+      .left-container{
+        float: left;
+        height: 150px;
+        width: 500px;       
+      }
+      .right-container{
+        float: left;
+        height: 325px;
+        width: 280px;
       }
     </style>
   </body>

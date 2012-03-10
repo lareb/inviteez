@@ -1,5 +1,12 @@
 ActiveAdmin::Dashboards.build do
-
+  section "Recent designs" do
+    table_for InvitationDesign.all.collect do
+        column :design_title
+        column :invitation
+        column "Available", :is_available
+    end
+    strong { link_to "View All Designs", admin_invitation_designs_path }
+  end
   # Define your dashboard sections here. Each block will be
   # rendered on the dashboard in the context of the view. So just
   # return the content which you would like to display.

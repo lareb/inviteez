@@ -2,11 +2,21 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
-        <file>file:/Users/lareb/workspace/inviteez_3.2/app/controllers/portfolio_controller.rb</file>
-        <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/portfolio/new.html.erb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/home/tmp_design.html.erb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/controllers/home_controller.rb</file>
         <file>file:/Users/lareb/workspace/inviteez_3.2/app/assets/stylesheets/design_main.css</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/layouts/application.html.erb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/models/invitation.rb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/config/routes.rb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/Gemfile</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/models/invitation_design.rb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/db/migrate/20120308153733_create_invitation_designs.rb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/admin/invitation_designs.rb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/db/migrate/20120308211109_rename_invitation_type_field.rb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/portfolio/index.html.erb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/portfolio/new.html.erb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/controllers/portfolio_controller.rb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/db/seeds.rb</file>
         <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/portfolio/customize_your_invitation.html.erb</file>
-        <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/portfolio/design.html.erb</file>
-        <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/design_templates/wedding/black_with_rose.html.erb</file>
     </open-files>
 </project-private>
