@@ -13,10 +13,11 @@ class PortfolioController < ApplicationController
 
   def design
     @invitation = Invitation.find_by_id(params[:type]) #where("id = #{params[:id].to_i}")
-    @invitation_designs = InvitationDesign.all()
     if(@invitation.nil? || @invitation.is_active != true)
-      redirect_to :action => :index
-    end
+      @invitation_designs = InvitationDesign.all
+    else
+      @invitation_designs = InvitationDesign.where("invitation_id = #{params[:type]}")
+    end    
   end
 
   def create
@@ -41,11 +42,20 @@ class PortfolioController < ApplicationController
 
   def customize_your_invitation
     @content = InvitationDesign.find(params[:id])
-    render :layout => false
+    @customize_invitation = true
+
+    from = @content.html_design.index("<body>")
+    to = @content.html_design.index("</body>")
+    @template = @content.html_design[(from + 7)..(to-1)]
+
+    render :layout => "custom_card"
   end
 
   def permission_setup
       render :layout => false
   end
 
+  def load_panel
+    render :partial => "control_panel"
+  end
 end

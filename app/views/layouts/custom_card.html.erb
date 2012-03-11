@@ -1,0 +1,50 @@
+<!DOCTYPE html><html>
+  <head>
+    <title>INVITATION_TITLE</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Italianno"/>
+    <%= stylesheet_link_tag :basic %>
+    <%= javascript_include_tag "application", "jquery.simplemodal" %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+    <%= yield %>
+
+    <div id="control-panel">
+        <!-- PANEL START HERE-->
+        <div class="dashboard-panel"></div>
+        <!-- PANEL ENDS HERE-->
+    </div>
+
+    <!-- modal content -->
+    <div id="basic-modal-content">
+            <h3>Basic Modal Dialog</h3>
+            <!-- $('#basic-modal-content').modal(); -->
+            
+    </div>
+
+    <!-- preload the images -->
+    <div style='display:none'>
+            <img src='img/basic/x.png' alt='' />
+    </div>
+    <!-- modal content end-->
+
+    
+
+    <style>
+    /* ----MOVE THIS INTO APP CSS----- */
+    #wrapper{
+      position: relative;
+      margin-bottom: 100px;
+    }
+
+    #control-panel{
+      background-color: #B3B3B3;
+      bottom: 0;
+      height: 100px;
+      position: fixed;
+      width: 100%;
+    }
+    </style>
+
+  </body>
+</html>

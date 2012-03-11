@@ -13,6 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+$(document).ready(function() {
+    $('#title').click(function (e) {
+        $('#basic-modal-content').modal();
+        return false;
+    });
+});
+
+
+
+
 function toggleSignup(){
     if($("#why-invitees").is(':visible')){
         $("#why-invitees").slideToggle("100", function(){
@@ -23,4 +33,8 @@ function toggleSignup(){
             $("#why-invitees").slideToggle("100");
         });
     }
+}
+
+function showModel(){
+    
 }
