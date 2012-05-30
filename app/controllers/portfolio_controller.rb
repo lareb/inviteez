@@ -1,7 +1,7 @@
 class PortfolioController < ApplicationController
   before_filter :authenticate_user!
   def index
-    @type = Invitation.select("id, name").where("is_active = 1")
+    @type = Invitation.select("id, name").active
   end
 
   def new
@@ -16,8 +16,8 @@ class PortfolioController < ApplicationController
     if(@invitation.nil? || @invitation.is_active != true)
       @invitation_designs = InvitationDesign.all
     else
-      @invitation_designs = InvitationDesign.where("invitation_id = #{params[:type]}")
-    end    
+      @invitation_designs = InvitationDesign.where("id = #{params[:type]}")
+    end
   end
 
   def create

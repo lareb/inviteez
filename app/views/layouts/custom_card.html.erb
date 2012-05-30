@@ -2,6 +2,7 @@
   <head>
     <title>INVITATION_TITLE</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Italianno"/>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gudea"/>
     <%= stylesheet_link_tag :basic %>
     <%= javascript_include_tag "application", "jquery.simplemodal" %>
     <%= csrf_meta_tag %>
@@ -17,14 +18,19 @@
 
     <!-- modal content -->
     <div id="basic-modal-content">
-            <h3>Basic Modal Dialog</h3>
-            <!-- $('#basic-modal-content').modal(); -->
-            
+            <label class="text-header">Some good header</label>
+            <div id="edit-title">
+                <input type="text" id="title-input" value="" />
+            </div>
+            <div id="edit-subtitle">
+                <input type="text" id="sub-title-input" value="" />
+            </div>
+            <a href="#" title="Done">Done</a>
     </div>
 
     <!-- preload the images -->
     <div style='display:none'>
-            <img src='img/basic/x.png' alt='' />
+            <img src='/assets/web/x.png' alt='' />
     </div>
     <!-- modal content end-->
 

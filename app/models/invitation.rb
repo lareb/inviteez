@@ -1,4 +1,6 @@
 class Invitation < ActiveRecord::Base
-    #belongs_to :event
+    has_one :event
     has_many :invitation_designs
+
+    scope :active, where("is_active = 1")
 end

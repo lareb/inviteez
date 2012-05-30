@@ -15,13 +15,18 @@
 //= require_tree .
 $(document).ready(function() {
     $('#title').click(function (e) {
-        $('#basic-modal-content').modal();
+        $("#edit-title").show();
+        showModel();
         return false;
     });
 });
 
 
-
+function showModel(){
+    $('#basic-modal-content').modal();
+    $('#basic-modal-content').css("height","200px");
+    $("#simplemodal-container").css("height","200px");
+}
 
 function toggleSignup(){
     if($("#why-invitees").is(':visible')){
@@ -33,8 +38,4 @@ function toggleSignup(){
             $("#why-invitees").slideToggle("100");
         });
     }
-}
-
-function showModel(){
-    
 }
