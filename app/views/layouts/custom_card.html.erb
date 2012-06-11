@@ -3,7 +3,7 @@
     <title>INVITATION_TITLE</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Italianno"/>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gudea"/>
-    <%= stylesheet_link_tag :basic %>
+    <%= stylesheet_link_tag :basic, :design_main %>
     <%= javascript_include_tag "application", "jquery.simplemodal" %>
     <%= csrf_meta_tag %>
   </head>
@@ -12,7 +12,11 @@
 
     <div id="control-panel">
         <!-- PANEL START HERE-->
-        <div class="dashboard-panel"></div>
+        <div class="dashboard-panel">
+          <div class="panel-back label">CANCEL</div>
+          <div class="panel-actions"></div>
+          <div class="panel-preview label">PREVIEW</div>
+        </div>
         <!-- PANEL ENDS HERE-->
     </div>
 

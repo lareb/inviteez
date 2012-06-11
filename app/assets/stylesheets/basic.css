@@ -23,3 +23,17 @@
 #simplemodal-container a {color:#ddd;}
 #simplemodal-container a.modalCloseImg {background:url(/assets/web/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
 #simplemodal-container h3 {color:#fff; font-family: Gudea}
+
+.panel-preview{
+    float: right;
+    margin-right: 7px !important;
+    margin-top: 7px !important;
+    padding: 35px !important;
+}
+
+.panel-back{
+    float: left;
+    margin-left: 7px !important;
+    margin-top: 7px !important;
+    padding: 35px !important;
+}

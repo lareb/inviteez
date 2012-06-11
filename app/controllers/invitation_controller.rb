@@ -1,4 +1,4 @@
-class PortfolioController < ApplicationController
+class InvitationController < ApplicationController
   before_filter :authenticate_user!
   def index
     @type = Invitation.select("id, name").active

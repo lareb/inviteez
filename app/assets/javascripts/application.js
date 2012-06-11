@@ -39,3 +39,8 @@ function toggleSignup(){
         });
     }
 }
+
+
+function loadPanel(){
+    
+}

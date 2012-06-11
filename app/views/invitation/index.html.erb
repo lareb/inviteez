@@ -1,0 +1,14 @@
+<div class="container">
+
+    <div class="invitaion-desc"></div>
+    <div class="invitation-types">
+          <label class="text-header">Chose your Event</label>
+          <ul class="display-tiles">
+            <%@type.each do |type|%>
+                <li class="label" style="" onclick="window.location.href = '/invitation/design?type=<%=type.id%>'"><%= type.name%></li>
+            <%end%>
+            <li class="label" style="" onclick="window.location.href = '/invitation/design?type=all'">Show All</li>
+          </ul>
+    </div>
+      
+</div>
