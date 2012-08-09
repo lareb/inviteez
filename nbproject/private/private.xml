@@ -10,5 +10,15 @@
         <file>file:/Users/lareb/workspace/inviteez_3.2/app/assets/javascripts/application.js</file>
         <file>file:/Users/lareb/workspace/inviteez_3.2/app/controllers/invitation_controller.rb</file>
         <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/layouts/custom_card.html.erb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/assets/stylesheets/basic.css</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/controllers/registrations_controller.rb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/controllers/sessions_controller.rb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/config/routes.rb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/home/index.html.erb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/sessions/_sign_up.html.erb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/app/views/sessions/_login.html.erb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/config/initializers/mail.rb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/config/environments/development.rb</file>
+        <file>file:/Users/lareb/workspace/inviteez_3.2/config/application.rb</file>
     </open-files>
 </project-private>
